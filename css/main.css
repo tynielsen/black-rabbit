@@ -1,0 +1,200 @@
+/********************************************************************************
+	@Section: Applies to all page sections
+	**Search for @ symbol or @Section: to search by category
+
+	Color Reference:
+			white: #FFFFFF
+			black: #000000
+			 gray: #333333
+			 blue: #29f9de
+
+	Font-Family Reference:
+		Helvetica
+
+********************************************************************************/
+/************************************
+
+	@Search: Global
+
+************************************/
+
+body {
+	background: #0A0A0A url(../img/bg-main.jpg) no-repeat center 0 fixed;
+	color: #29f9de;
+	font-family: Helvetica, sans-serif;
+}
+body.fixed { background-position: -512px 0;}
+a {
+	text-decoration: none;
+	outline: none;
+	overflow: hidden;
+	color: #29f9de;
+}
+a:hover {
+	text-decoration: underline;
+	outline: none;
+	overflow: hidden;
+}
+a:active, a:visited {
+	text-decoration: none;
+	outline: none;
+	overflow: hidden;
+}
+.clear {
+	clear: both;
+	height: 1px;
+	line-height: 1px;
+}
+b { font-weight: 700;}
+em, i { font-style: oblique;}
+sup {
+	font-size: 60%;
+	vertical-align: top;
+}
+h1 {}
+h2 {}
+h3 {}
+p {}
+
+/*******************************************
+
+	@Section: Forms
+
+*******************************************/
+
+form {}
+
+/*******************************************
+
+	@Section: Header
+
+*******************************************/
+
+header {
+	background: url(../img/header-coverup-2.jpg) no-repeat center 0 fixed;
+	width: 1024px;
+	height: 250px;
+	margin: -1px auto 0;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+header.fixed { background-position: -512px 0;}
+header .logo {
+	background: url(../img/logo-2.png) no-repeat;
+	display: block;
+	width: 438px;
+	height: 199px;
+	text-indent: -9999px;
+	margin-top: 30px;
+	z-index: 111;
+}
+.cobweb {
+	background: url(../img/cobweb.png) no-repeat;
+	width: 312px;
+	height: 253px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 101;
+}
+
+/*******************************************
+
+	@Section: Navigation
+
+*******************************************/
+
+.nav { margin: 35px 0 0 -25px;}
+.nav li {
+	-o-transform: rotate(24deg);
+	-moz-transform: rotate(24deg);
+	-webkit-transform: rotate(24deg);
+	transform: rotate(24deg);
+}
+.nav li a {
+	display: block;
+	width: 197px;
+	height: 65px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.nav-1 a { background: url(../img/btn-about.png) no-repeat 0 0;}
+.nav-2 a { background: url(../img/btn-work.png) no-repeat 0 0;}
+.nav-3 a { background: url(../img/btn-contact.png) no-repeat 0 0;}
+
+/*******************************************
+
+	@Section: Footer
+
+*******************************************/
+
+footer {
+	width: 1024px;
+	margin: auto;
+	position: relative;
+}
+
+/*******************************************
+
+	@Section: Parallax
+
+*******************************************/
+
+.parallax {
+	z-index: 110 !important;
+}
+
+
+/*******************************************
+
+	@Section: Home Page Content
+
+*******************************************/
+
+.page {
+	width: 1024px;
+	margin: auto;
+}
+.content-container {
+	margin-top: 250px;
+	overflow: hidden;
+}
+.column-1 {
+	background: url(../img/bg-nav.png) no-repeat 49px 0;
+	width: 200px;
+	height: 804px;
+	position: fixed;
+	z-index: 500;
+}
+.column-2 {
+	background: url(../img/bg-content.png) no-repeat 0 0 fixed;
+	width: 752px;
+	float: right;
+	padding: 100px 0 0 100px;
+}
+.content-body, .content-title {
+	background: url(../img/content-bg.png) repeat;
+}
+.content-title {
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 24px;
+	padding: 10px 30px;
+	margin-bottom: 40px;
+	float: left;
+}
+.content-body {
+	padding: 40px;
+	margin-bottom: 150px;
+}
+.stitch-1 {
+	background: url(../img/stitch-title-1.png) no-repeat 0 center;
+	height: 44px;
+	z-index: 1;
+	position: relative;
+	margin-left: -21px;
+}
+
+
+
