@@ -15,30 +15,30 @@ $(function() {
 		e.preventDefault();
 		var pos = $('#about').position();
 		$('body').animate({
-			scrollTop: pos.top - 350
+			scrollTop: pos.top - 240
 		}, 'slow');
 	});
 	$('.nav-2 a').click(function(e) {
 		e.preventDefault();
 		var pos = $('#work').position();
 		$('body').animate({
-			scrollTop: pos.top - 350
+			scrollTop: pos.top - 240
 		}, 'slow');
 	});
 	$('.nav-3 a').click(function(e) {
 		e.preventDefault();
 		var pos = $('#contact').position();
 		$('body').animate({
-			scrollTop: pos.top - 350
+			scrollTop: pos.top - 240
 		}, 'slow');
 	});
 
 	var column2pos = $('.column-2').position();
-	$('.column-2').css('background-position', column2pos.left + 'px 250px');
+	$('.column-2').css('background-position', column2pos.left + 'px 200px');
 	
 	$(window).resize(function() {
 		var column2pos = $('.column-2').position();
-		$('.column-2').css('background-position', column2pos.left + 'px 250px');
+		$('.column-2').css('background-position', column2pos.left + 'px 200px');
 	});
 
 	$.scrollingParallax('img/stars-2.png', 'parallax', {
