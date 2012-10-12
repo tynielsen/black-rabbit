@@ -42,7 +42,7 @@ $(function() {
 	});
 
 	$.scrollingParallax('img/stars-2.png', 'parallax', {
-				bgHeight: '100%',
+				bgHeight: '90%',
 				bgWidth: '100%',
 				staticSpeed: .10,
 				staticScrollLimit: false,
