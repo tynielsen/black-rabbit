@@ -14,22 +14,41 @@ $(function() {
 	$('.nav-1 a').click(function(e) {
 		e.preventDefault();
 		var pos = $('#about').position();
-		$('body').animate({
+		$('body').stop(true, true).animate({
 			scrollTop: pos.top - 240
+		}, 'slow');
+		$('.nav-3 a, .nav-2 a').animate({
+			marginLeft: 0
+		}, 'slow');
+		$(this).stop(true, true).animate({
+			marginLeft: '23px'
 		}, 'slow');
 	});
 	$('.nav-2 a').click(function(e) {
 		e.preventDefault();
 		var pos = $('#work').position();
-		$('body').animate({
+		$('body').stop(true, true).animate({
 			scrollTop: pos.top - 240
+		}, 'slow');
+		$('.nav-1 a, .nav-3 a').animate({
+			marginLeft: 0
+		}, 'slow');
+		$(this).stop(true, true).animate({
+			marginLeft: '23px',
+			color: '#ffffff'
 		}, 'slow');
 	});
 	$('.nav-3 a').click(function(e) {
 		e.preventDefault();
 		var pos = $('#contact').position();
-		$('body').animate({
+		$('body').stop(true, true).animate({
 			scrollTop: pos.top - 240
+		}, 'slow');
+		$('.nav-1 a, .nav-2 a').animate({
+			marginLeft: 0
+		}, 'slow');
+		$(this).stop(true, true).animate({
+			marginLeft: '23px'
 		}, 'slow');
 	});
 
