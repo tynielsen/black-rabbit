@@ -17,9 +17,10 @@ $(function() {
 		$('body').stop(true, true).animate({
 			scrollTop: pos.top - 240
 		}, 'slow');
+
 		$('.nav-3 a, .nav-2 a').animate({
 			marginLeft: 0
-		}, 'slow');
+		}, 'slow')
 		$(this).stop(true, true).animate({
 			marginLeft: '23px'
 		}, 'slow');
@@ -30,12 +31,12 @@ $(function() {
 		$('body').stop(true, true).animate({
 			scrollTop: pos.top - 240
 		}, 'slow');
-		$('.nav-1 a, .nav-3 a').animate({
+
+		$('.nav-3 a, .nav-1 a').animate({
 			marginLeft: 0
-		}, 'slow');
+		}, 'slow')
 		$(this).stop(true, true).animate({
-			marginLeft: '23px',
-			color: '#ffffff'
+			marginLeft: '23px'
 		}, 'slow');
 	});
 	$('.nav-3 a').click(function(e) {
@@ -44,9 +45,10 @@ $(function() {
 		$('body').stop(true, true).animate({
 			scrollTop: pos.top - 240
 		}, 'slow');
+		
 		$('.nav-1 a, .nav-2 a').animate({
 			marginLeft: 0
-		}, 'slow');
+		}, 'slow')
 		$(this).stop(true, true).animate({
 			marginLeft: '23px'
 		}, 'slow');
