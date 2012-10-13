@@ -20,7 +20,7 @@ $(function() {
 
 		$('.nav-3 a, .nav-2 a').animate({
 			marginLeft: 0
-		}, 'slow')
+		}, 'slow');
 		$(this).stop(true, true).animate({
 			marginLeft: '23px'
 		}, 'slow');
@@ -34,7 +34,7 @@ $(function() {
 
 		$('.nav-3 a, .nav-1 a').animate({
 			marginLeft: 0
-		}, 'slow')
+		}, 'slow');
 		$(this).stop(true, true).animate({
 			marginLeft: '23px'
 		}, 'slow');
@@ -48,7 +48,7 @@ $(function() {
 		
 		$('.nav-1 a, .nav-2 a').animate({
 			marginLeft: 0
-		}, 'slow')
+		}, 'slow');
 		$(this).stop(true, true).animate({
 			marginLeft: '23px'
 		}, 'slow');
@@ -63,11 +63,11 @@ $(function() {
 	});
 
 	$.scrollingParallax('img/stars-2.png', 'parallax', {
-				bgHeight: '90%',
+				bgHeight: '75%',
 				bgWidth: '100%',
-				staticSpeed: .10,
+				staticSpeed: 0.10,
 				staticScrollLimit: false,
-				loopIt: false,
+				loopIt: false
 			});
 	
 /*
