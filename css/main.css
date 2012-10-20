@@ -19,7 +19,7 @@
 ************************************/
 
 body {
-	background: #0A0A0A url(../img/bg-main.jpg) no-repeat center 0 fixed;
+	background: #0A0A0A url(../img/bg-main-copy.jpg) no-repeat center 0 fixed;
 	color: #29f9de;
 	font-family: Helvetica, sans-serif;
 	line-height: 1.8;
@@ -75,7 +75,7 @@ form {}
 *******************************************/
 
 header {
-	background: url(../img/header-coverup-2.jpg) no-repeat center 0 fixed;
+	background: url(../img/header-coverup-2-copy.jpg) no-repeat center 0 fixed;
 	width: 1024px;
 	height: 200px;
 	margin: -1px auto 0;
