@@ -55,11 +55,11 @@ $(function() {
 	});
 
 	var column2pos = $('.column-2').position();
-	$('.column-2').css('background-position', column2pos.left + 'px 200px');
+	$('.column-2').css('background-position', column2pos.left + 'px 209px');
 	
 	$(window).resize(function() {
 		var column2pos = $('.column-2').position();
-		$('.column-2').css('background-position', column2pos.left + 'px 200px');
+		$('.column-2').css('background-position', column2pos.left + 'px 209px');
 	});
 
 	$.scrollingParallax('img/stars-2.png', 'parallax', {
