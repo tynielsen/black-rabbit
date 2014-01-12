@@ -1,0 +1,374 @@
+/********************************************************************************
+	@Section: Applies to all page sections
+	**Search for @ symbol or @Section: to search by category
+
+	Color Reference:
+			white: #FFFFFF
+			black: #000000
+			 gray: #333333
+			 blue: #29f9de
+
+	Font-Family Reference:
+		Helvetica
+
+********************************************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/************************************************
+ *
+ *  @Section: Variables
+ *
+ ************************************************/
+/************************************************
+ *
+ *  @Section: Mixins
+ *
+ ************************************************/
+.clear {
+  content: '';
+  clear: both;
+  height: 0;
+  line-height: 0;
+}
+/************************************************
+ *
+ *  @Section: Global
+ *
+ ************************************************/
+body {
+  background: #0a0a0a url(../img/bg-main-copy.jpg) no-repeat center 0 fixed;
+  color: #29f9de;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.8;
+}
+body.fixed {
+  background-position: -512px 0;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  overflow: hidden;
+  color: #29f9de;
+}
+a:hover {
+  text-decoration: underline;
+  outline: none;
+  overflow: hidden;
+}
+a:active,
+a:visited {
+  text-decoration: none;
+  outline: none;
+  overflow: hidden;
+}
+b {
+  font-weight: 700;
+}
+em {
+  font-style: oblique;
+}
+sup {
+  font-size: 60%;
+  vertical-align: top;
+}
+h2 {
+  margin-bottom: 6px;
+}
+p {
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+/************************************************
+ *
+ *  @Section: Forms
+ *
+ ************************************************/
+/************************************************
+ *
+ *  @Section: Header
+ *
+ ************************************************/
+header {
+  /*background: url(../img/header-coverup-2-copy.jpg) no-repeat center 0 fixed;*/
+  width: 1024px;
+  height: 200px;
+  margin: 0 auto;
+  /*position: fixed;
+  top: 0; */
+  z-index: 100;
+}
+header.fixed {
+  background-position: -512px 0;
+}
+header .logo {
+  background: url(../img/logo-1.png) no-repeat;
+  display: block;
+  width: 438px;
+  height: 199px;
+  text-indent: -9999px;
+  margin-top: 10px;
+  z-index: 111;
+}
+.cobweb {
+  background: url(../img/cobweb.png) no-repeat;
+  width: 312px;
+  height: 253px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 101;
+}
+/************************************************
+ *
+ *  @Section: Navigation
+ *
+ ************************************************/
+.nav {
+  margin: 35px 0 0 -25px;
+}
+.nav li {
+  -o-transform: rotate(24deg);
+  -ms-transform: rotate(24deg);
+  -moz-transform: rotate(24deg);
+  -webkit-transform: rotate(24deg);
+  transform: rotate(24deg);
+}
+.nav li a {
+  display: block;
+  width: 197px;
+  height: 65px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+.nav li.nav-1 a {
+  margin-left: 23px;
+  background: url(../img/btn-about.png) no-repeat 0 0;
+}
+.nav li.nav-2 a {
+  background: url(../img/btn-work.png) no-repeat 0 0;
+}
+.nav li.nav-3 a {
+  background: url(../img/btn-contact.png) no-repeat 0 0;
+}
+/************************************************
+ *
+ *	@Section: Footer
+ *
+ ************************************************/
+footer {
+  width: 1024px;
+  margin: auto;
+  position: relative;
+}
+/************************************************
+ *
+ *  @Section: Parallax
+ *
+*************************************************/
+.parallax {
+  z-index: 110 !important;
+}
+/************************************************
+ *
+ *  @Section: Home Page Content
+ *
+*************************************************/
+.page {
+  position: relative;
+  width: 1024px;
+  margin: auto;
+  z-index: 111;
+}
+.content-container {
+  /*margin-top: 200px; */
+  overflow: hidden;
+}
+.column-1 {
+  background: url(../img/bg-nav.png) no-repeat 49px 0;
+  width: 200px;
+  height: 804px;
+  position: fixed;
+  z-index: 500;
+}
+.column-2 {
+  background: url(../img/bg-content.png) no-repeat 0 0 fixed;
+  width: 792px;
+  float: right;
+  padding: 40px 0 0 60px;
+}
+.content-body,
+.content-title {
+  background: url(../img/content-bg.png) repeat;
+}
+.content-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 24px;
+  padding: 10px 30px 9px;
+  margin-bottom: 40px;
+  float: left;
+}
+.content-body {
+  padding: 40px;
+  margin-bottom: 150px;
+  width: 652px;
+}
+.stitch-1 {
+  background: url(../img/stitch-title-1.png) no-repeat 0 center;
+  height: 44px;
+  z-index: 1;
+  position: relative;
+  margin-left: -21px;
+}
+.stitch-2 {
+  background: url(../img/stitch-title-2.png) no-repeat 0 center;
+  height: 44px;
+  z-index: 1;
+  position: relative;
+  margin-left: -21px;
+}
+.stitch-3 {
+  background: url(../img/stitch-title-3.png) no-repeat 0 center;
+  height: 44px;
+  z-index: 1;
+  position: relative;
+  margin-left: -27px;
+}
+ul.contact-content > li {
+  margin-bottom: 10px;
+}
+.contact-info-title {
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+}
+ul.address {
+  display: inline-block;
+  vertical-align: top;
+}
