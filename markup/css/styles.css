@@ -35813,6 +35813,7 @@ form.form-1 .main-content form .bottom-row {
   .superbowl-piece .superbowl-row-1 .content .trophy {
     background: url(../img/superbowl/mobile/trophy.png) no-repeat;
     position: absolute;
+    top: 0;
     left: 50%;
     margin: -75px 0 0 -85px;
   }
