@@ -1,0 +1,64 @@
+.letter {
+
+  .main-nav-2 > a,
+  .main-nav-2-3 a { color: @blue !important; }
+
+  .sub-header {
+    background-image: url(../img/header-img-43.jpg);
+    margin-bottom: 0;
+  }
+
+  .main-content {
+    overflow: visible;
+  }
+
+  .row {
+
+    p {
+      margin-bottom: 20px;
+      max-width: 90%;
+    }
+
+    .offset-right-60 {
+      padding-top: 0;
+    }
+
+    .no-offset {
+      width: 30%;
+
+      &.right {
+        float: right;
+        margin-right: -10%;
+        margin-left: 2%;
+        @media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+          margin-right: 0; 
+        }
+      }
+
+      &.left {
+        float: left;
+        margin-left: -7%;
+        @media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+          margin-left: 0; 
+        }
+      }
+
+      &.signature {
+        width: 171px !important;
+        margin: 30px 0;
+      }
+      @media only screen and (max-width : 400px) {
+         width: 100% !important;
+         margin: 10px;
+      }
+    }
+  }  
+}
+
+@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+  .letter {
+    .sub-header { background-image: url(../img/_mobile/headers/WhatWeBelieve_PWPAllPG_Mobile.jpg); }
+    .mobile-main;
+    .mobile-images;
+  }
+}

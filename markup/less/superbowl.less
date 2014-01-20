@@ -1,0 +1,608 @@
+/************************************************************************************************
+ *
+ *  @Section: Superbowl Countdown Scoreboard 
+ *
+ *************************************************************************************************/
+.superbowl-piece {
+	margin: 150px auto 43px;
+
+	.content {
+		max-width: 900px;
+		margin: auto;
+	}
+
+	.superbowl-row-1 {
+		background: @black url(../img/superbowl/superbowl-bg-img-1.png) no-repeat center 0;
+		height: 120px;
+		position: relative;
+
+		&:before {
+			background: url(../img/superbowl/superbowl-bg-img-1-1.png) no-repeat center 0;
+			width: 100%;
+			height: 35px;
+			display: block;
+			content: '';
+			position: absolute;
+			top: -35px;
+		}
+
+		.content {
+			width: 760px;
+			margin-top: -20px;
+
+			.nfl-sponsors,
+			.trophy,
+			.countdown-container {
+				display: inline-block;
+				vertical-align: top;
+				position: relative;
+			}
+
+
+			.nfl-sponsors,
+			.countdown-container {
+				background: url(../img/superbowl/content-bg.jpg) no-repeat 0 0;
+				width: 228px;
+				height: 102px;
+				margin-top: -20px;
+				padding: 10px;
+			}
+
+			.nfl-sponsors {
+
+				a {
+					display: block;
+					text-indent: -9999px;
+				}
+				
+				ul {
+					width: 160px;
+					float: left;
+
+					&:after { .clear; }
+
+					li {
+						float: left;
+						margin: 0 0 7px 5px;
+
+						&:first-child,
+						&:nth-child(4) { margin-left: 0; }
+						
+						&:last-child {
+							width: 100%;
+							text-align: center;
+							margin: 0;
+							padding-top: 5px;
+							color: @white;
+							text-transform: uppercase;
+							font-size: 8px;
+						}
+
+						a {
+							width: 48px;
+							height: 38px;
+
+							&.logo-pepsi 	{ background: url(../img/superbowl/logo-pepsi.png) no-repeat center; }
+							&.logo-doritos 	{ background: url(../img/superbowl/logo-doritos.png) no-repeat center; }
+							&.logo-mtn-dew 	{ background: url(../img/superbowl/logo-mountain-dew.png) no-repeat center; }
+							&.logo-gatorade { background: url(../img/superbowl/logo-gatorade.png) no-repeat center; }
+							&.logo-quaker 	{ background: url(../img/superbowl/logo-quaker.png) no-repeat center; }
+							&.logo-cheetos 	{ background: url(../img/superbowl/logo-cheetos.png) no-repeat center; }
+						}
+					}
+				}
+
+				a.logo-nfl {
+					background: url(../img/superbowl/logo-nfl.png) no-repeat 12px 0;
+					width: 50px;
+					height: 69px;
+					padding: 0 0 35px 12px;
+					border-left: 1px solid @white;
+					float: left;
+				}
+			}
+
+			.trophy {
+				background: url(../img/superbowl/trophy.png) no-repeat 0 0;
+				width: 224px;
+				height: 206px;
+				margin: -106px 15px 0;
+			}
+
+			.countdown-container {
+				width: 217px;
+				padding: 13px 16px;
+
+				.countdown {
+				
+					div {
+						display: inline-block;
+						vertical-align: top;
+						position: relative;
+						margin-bottom: 20px;
+
+						span {
+							background: url(../img/superbowl/countdown-digit-bg.png) repeat;
+							//background: rgba(255, 255, 255, 0.30);
+							display: inline-block;
+							vertical-align: top;
+							width: 25px;
+							height: 37px;
+							font-size: 2.25em;
+							line-height: 40px;
+							color: @white;
+							text-align: center;
+
+							&:first-child { margin-right: 1px; }
+						}
+
+						&.days,
+						&.hours,
+						&.minutes,
+						&.seconds {
+
+							&:after {
+								position: absolute;
+								bottom: -17px;
+								left: 0;
+								width: 100%;
+								text-align: center;
+								color: @white;
+								font-size: 11px;
+								text-transform: uppercase;
+							}
+						}
+
+						&.days {
+
+							&:after { content: 'days'; }
+						}
+
+						&.hours {
+
+							&:after { content: 'hours'; }
+						}
+
+						&.minutes {
+
+							&:after { content: 'minutes'; }
+						}
+
+						&.seconds {
+
+							&:after { content: 'seconds'; }
+						}
+					}
+				}
+
+				p {
+					text-transform: uppercase;
+					color: @white;
+					text-align: center;
+					margin-bottom: 5px;
+
+					&.superbowl-date {
+						color: #a7a9ac;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.superbowl-row-2 {
+		background: @black url(../img/superbowl/superbowl-bg-img-2.png) no-repeat center 0;
+		height: 39px;
+
+		#scrolling-banner {
+			width: 882px;
+			height: 39px;
+			position: relative;
+			margin: auto;
+			overflow: hidden;
+		}
+
+		.banner-text {
+			background:  url(../img/superbowl/banner-text.png) no-repeat center;
+			display: block;
+			height: 17px;
+			padding: 11px 0;
+			text-align: center;
+			text-indent: -9999px;
+			width: 880px;
+			float: left;
+			margin: 0;
+		}
+	}
+
+	.superbowl-row-3 {
+		background: @black url(../img/superbowl/superbowl-bg-img-3.png) no-repeat center 0;
+		height: 476px;
+
+		.content {
+			text-align: center;
+			padding: 20px 0 0;
+		}
+
+		.iframe-container {
+			//background: url(../img/superbowl/video-bg.jpg) no-repeat 0 0;
+			background-color: @black;
+			border: 1px solid #4c4c4c;
+			outline: 4px solid @black;
+			padding: 10px 15px 5px;
+			display: inline-block;
+			position: relative;
+			z-index: 1;
+
+			iframe {
+				position: relative;
+				z-index: 0;
+			}
+		}
+	}
+
+	.superbowl-row-4 {
+		background: @black url(../img/superbowl/superbowl-bg-img-4.png) no-repeat center 0;
+		height: 158px;
+		position: relative;
+
+		&:after {
+			background: url(../img/superbowl/superbowl-bg-img-4-1.png) no-repeat center 0;
+			width: 100%;
+			height: 38px;
+			display: block;
+			content: '';
+			position: absolute;
+			bottom: -38px;
+		}
+
+		.content {
+			width: 744px;
+			padding-top: 18px;
+			position: relative;
+			z-index: 2;
+		}
+
+		.sec-1,
+		.sec-2 {
+			display: inline-block;
+			border: 1px solid #4C4C4C;
+			outline: 2px solid @black;
+		}
+
+		.sec-1 {
+			margin-right: 1px;
+			position: relative;
+
+			.overlay {
+				background: rgb(0, 0, 0); // for older broswers
+				background: rgba(0, 0, 0, 0.75);
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 88.1%;
+				height: 83.5%;
+				padding: 6%;
+
+				p,
+				a { color: @white; }
+
+				a {
+					display: block;
+					margin-top: 5px;
+					font-weight: 700;
+				}
+
+				img {
+					width: 115px;
+					height: 72px;
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					margin-left: -57px;
+				}
+			}
+
+			&:hover {
+
+				.overlay { display: block; }
+			}
+		}
+
+		.sec-2 {
+			background: url(../img/superbowl/the-daily-beast-bg.jpg) no-repeat 0 0;
+			width: 326px;
+			height: 157px;
+			padding-left: 190px;
+
+			a {
+				display: inline-block;
+				float: left;
+				color: @white;
+				margin-top: 14px;
+				padding-right: 10px;
+				position: relative;
+				line-height: 1.2;
+
+				i {
+					content: '';
+					display: inline-block;
+					width: 0;
+					height: 0;
+					border-left: 5px solid @white;
+					border-top: 5px solid transparent;
+					border-bottom: 5px solid transparent;
+					-webkit-transition: all .2s ease;
+					-moz-transition: all .2s ease;
+					-o-transition: all .2s ease;
+					-ms-transition: all .2s ease;
+					transition: all .2s ease;
+				}
+
+				&:hover {
+					color: @black;
+
+					i { border-left: 5px solid @black; }
+				}
+			}
+		}
+	}
+}
+
+
+/************************************************************************************************
+ *
+ *  @Section: Mobile styles for Superbowl Countdown Scoreboard 
+ *
+ *************************************************************************************************/
+@media only screen and (max-width : 767px) { //, only screen and (max-width: 480px) {
+	.superbowl-piece {
+		background: url(../img/superbowl/mobile/main-bg.jpg) repeat;
+		margin: 85px auto 12px;
+		
+		.content {
+			max-width: 100%;
+			width: 100%;
+		}
+
+		.superbowl-row-1,
+		.superbowl-row-2,
+		.superbowl-row-3,
+		.superbowl-row-4 { background: none; }
+
+		.superbowl-row-1:before,
+		.superbowl-row-4:after { display: none;}
+
+		.superbowl-row-1 {
+			height: auto;
+			border-bottom: 3px solid #181818;
+			padding-bottom: 2px;
+			margin-bottom: 12px;
+
+			.content {
+				margin-top: 0;
+				padding: 0 3.125%;
+				width: 93.75%;
+
+				.nfl-sponsors,
+				.countdown-container {
+					margin-top: 95px;
+					height: auto;
+				}
+
+				.nfl-sponsors {
+					background: url(../img/superbowl/mobile/sponsors-bg.jpg) no-repeat;
+					width: 60%;
+					background-size: 100%;
+					z-index: 2;
+
+					ul {
+						width: 68%;
+						margin-left: -6px;
+
+						li {
+							width: 30%;
+
+							a {
+								width: auto;
+								height: 25px;
+
+								&.logo-pepsi 	{
+									background: url(../img/superbowl/mobile/logo-pepsi.png) no-repeat center;
+									background-size: auto 100%;
+								}
+								&.logo-doritos 	{
+									background: url(../img/superbowl/mobile/logo-doritos.png) no-repeat center;
+									background-size: auto 100%;
+								}
+								&.logo-mtn-dew 	{
+									background: url(../img/superbowl/mobile/logo-mountain-dew.png) no-repeat center;
+									background-size: auto 100%;
+								}
+								&.logo-gatorade {
+									background: url(../img/superbowl/mobile/logo-gatorade.png) no-repeat center;
+									background-size: auto 100%;
+								}
+								&.logo-quaker 	{
+									background: url(../img/superbowl/mobile/logo-quaker.png) no-repeat center;
+									background-size: auto 100%;
+								}
+								&.logo-cheetos 	{
+									background: url(../img/superbowl/mobile/logo-cheetos.png) no-repeat center;
+									background-size: auto 100%;
+								}
+							}
+
+							&.last-child p { font-size: 0.8em; }
+						}
+					}
+
+					a.logo-nfl {
+						background: url(../img/superbowl/mobile/logo-nfl.png) no-repeat 10px 0;
+						width: 23%;
+						min-height: 45px;
+						height: auto;
+						background-size: 78% auto;
+						margin-left: 10px;
+						padding-left: 10px;
+					}
+				}
+
+				.trophy {
+					background: url(../img/superbowl/mobile/trophy.png) no-repeat;
+					position: absolute;
+					left: 50%;
+					margin: -75px 0 0 -85px;
+				}
+
+				.countdown-container {
+					background: url(../img/superbowl/mobile/countdown-bg.jpg) no-repeat;
+					width: 21%;
+					background-size: 100%;
+					padding: 10px 16px;
+
+					p {
+						font-size: 0.6em;
+						line-height: 1.2;
+
+						&.superbowl-date { display: none; }
+					}
+					
+					.countdown {
+
+						div {
+
+							&.days {
+								width: 100%;
+
+								span {
+									background: rgba(255, 255, 255, 0.30);
+									width: 49%;
+									height: auto;
+									line-height: 1.2;
+									padding-top: 2px;
+								}
+							}
+
+							&.hours,
+							&.minutes,
+							&.seconds { display: none; }
+						}
+					}
+				}
+			}		
+		}
+
+		.superbowl-row-2 {
+			display: none;
+
+			#scrolling-banner {
+
+			}
+
+			.banner-text {
+
+			}
+		}
+
+		.superbowl-row-3 {
+			height: auto;
+			border-bottom: 3px solid #181818;
+			padding-bottom: 12px;
+
+			.content {
+				padding: 0 3.125%;
+				width: 92.25%;
+
+				.iframe-container {
+
+					iframe {
+						max-width: 100%;
+						height: auto;
+					}
+				}
+			}
+		}
+
+		.superbowl-row-4 {
+			height: auto;
+			padding: 0 3.125% 5px;
+
+			.content {
+				width: 100%;
+				padding-top: 10px;
+
+				.sec-1,
+				.sec-2 {
+				}
+
+				.sec-1 {
+					display: block;
+					background: @black;
+					margin-bottom: 6px;
+
+					img {
+						width: 53%;
+					}
+
+					.overlay {
+						background: none;
+						display: block;
+						height: auto;
+						width: 43%;
+						padding: 10px 0 0 57%;
+
+						p,
+						a {
+							font-size: 0.8em;
+							font-weight: normal;
+							margin: 0;
+						}
+
+						a {
+							i {
+								content: '';
+								width: 0;
+								height: 0;
+								border-left: 3px solid @white;
+								border-top: 3px solid transparent;
+								border-bottom: 3px solid transparent;
+								margin-top: -1px;
+							}
+						}
+					}
+				}
+
+				.sec-2 {
+					background: url(../img/superbowl/mobile/the-daily-beast-bg.jpg) no-repeat;
+					background-size: 100%;
+					width: 70%;
+					height: auto;
+					padding: 0 0 6px 29%;
+
+					a {
+						margin-top: 7px;
+						font-size: 0.63em;
+
+						i {
+							border-left: 3px solid @white;
+							border-top: 3px solid transparent;
+							border-bottom: 3px solid transparent;
+							margin-top: -1px;
+						}
+
+						&:hover {
+
+							i {
+								border-left: 3px solid @black;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+

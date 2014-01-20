@@ -1,0 +1,198 @@
+.application {
+
+  .footer-nav-3 {
+    > a { color: @blue !important; }
+    &:hover > a { color: @white !important; }
+  } 
+  .footer-nav-3-5 a { color: #99cce3 !important; }
+
+  .sub-header {
+    background-image: url(../img/header-img-7.jpg);
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .magellan-scrollbar {
+    ul {
+      li { padding: 0 3.88%; }
+    }
+  }
+
+  .main-content {
+    position: relative;
+    overflow: visible;
+
+    h2 {
+      color: #005580;
+      max-width: 95%;
+    }
+
+    h3 {
+      margin-bottom: 15px;
+      font-size: 1.2em;
+      max-width: 80%;
+    }
+
+    h5 {
+      font-family: "proxima_novasemibold", arial, sans-serif;
+      margin-bottom: 5px;
+      max-width: 95%;
+    }
+
+    p {
+      margin-bottom: 15px;
+      max-width: 90%;
+    }
+
+    ol {
+      list-style: decimal;
+      margin-left: 3%;
+      width: 90%;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 3%;
+      width: 90%;
+      margin-bottom: 20px;
+
+      &.last {
+        
+        li {
+          
+          &:last-child { margin-top: 10px; }
+        }
+      }
+    }
+
+    a[href^=tel] {
+      cursor: default;
+    }
+
+    .shrink { margin-top: -110px; }
+
+    .row {
+      margin-bottom: 20px;
+
+      &:after { .clear; }
+
+      .one {
+        img {
+          &:last-child {
+            width: 50%;
+            float: right;
+            position: relative;
+            right: 5%;
+          }
+        }
+      }
+
+      .two {
+        position: relative;
+        img {
+          &:first-child {
+            width: 50%;
+            float: right;
+            position: relative;
+            right: 5%;
+          }
+        }
+      }
+
+      .blue-box {
+        background-color: @blue;
+        width: 85%;
+        padding: 20px 10px 20px 20px;
+
+        img {
+          width: 10%;
+          float: left;
+          margin-right: 10px;
+        }
+
+        h3 {
+          color: @ltBlue2;
+          font-family: "proxima_novasemibold", arial, sans-serif;
+          font-size: 1em;
+          line-height: 1.6em;
+          margin-bottom: 20px;
+        }
+
+        p {
+          color: @white;
+          max-width: 100%;
+        }
+
+        a { color: @ltBlue2; }
+      }
+    }
+
+    .network {
+      margin-bottom: 30px;
+
+      h5 { margin-bottom: 0; }
+
+      img {
+        width: 5%;
+        float: left;
+        margin-right: 10px;
+        margin-top: 3px;
+        @media only screen and (max-width : 500px) {
+          width: 20% !important;
+        }
+      }
+
+      p {
+        max-width: 80%;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+
+  .application {
+
+    .sub-header { background-image: url(../img/_mobile/headers/Careers_ApplicationHelp_Mobile.jpg); }
+    .mobile-main;
+    
+    .main-content {
+      .mobile-images;
+      .mobile-row-shrink;
+      .row {
+        .one {
+          img {
+            width: 90%;
+            &:last-child {
+              right: 0;
+              bottom: 50px
+            }
+          }
+        }
+        .two {
+          img {
+            width: 90%; 
+            &:first-child {
+              position: absolute;
+              right: 0;
+              bottom: -30px;
+            }
+          }
+        }
+        .blue-box {
+          .mobile-blue-box;
+        }
+      }
+      .network {
+        img {
+          float: none;
+          display: block;
+          width: 13%;
+          margin-bottom: 20px;
+        }
+        p { max-width: 100%; }
+      }
+    }
+  }
+}

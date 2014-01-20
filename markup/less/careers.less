@@ -1,0 +1,345 @@
+.careers {
+
+  &.stuck .main-content { margin-top: 40px !important; }
+
+  .main-nav-1 > a,
+  .main-nav-1-5 > a { color: @blue !important; }
+
+  .footer-nav-3 {
+    > a { color: @blue !important; }
+    &:hover > a { color: @white !important;}
+    } 
+
+  .sub-header {
+    background-image: url(../img/header-img-6.jpg);
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .magellan-scrollbar {
+
+    ul {
+
+      li { padding: 0 2%; }
+    }
+  }
+
+  .main-content {
+    width: 70%;
+    margin: 30px auto 75px;
+    overflow: visible;
+    max-width: 920px;
+    margin-bottom: 50px;
+
+    a {
+      margin-bottom: 25px;
+      font-size: 0.9375em;
+    }
+
+    h2 { 
+      font-size: 2.1875em;
+      line-height: 1.2em;
+    }
+
+    p { margin-bottom: 25px; }
+
+    .long { margin: 0; }
+
+    .row-one,
+    .row-two,
+    .row-six,
+    .row-seven,
+    .row-eight {
+
+      .column-one,
+      .column-two { 
+        float: left; 
+        position: relative;
+      }
+      &:after { .clear; }
+    }
+
+    .row-one {
+
+      .column-one {
+        .mobile-arrow-down;
+        width: 30%; /*42.0408163%*/
+        background: @white;
+        padding: 30px 2.1428571% 40px;
+        margin-top: 8%;
+        .main-padding();
+      }
+
+      .column-two { width: 65%; }
+    }
+
+    .row-two {
+
+      .column-one { 
+        width: 70%;
+
+        .video {
+          position: relative;
+          zoom: 1;
+
+          .vid-content {
+            width: 55%;
+            position: absolute;
+            top: 44px;
+            left: 13%;
+
+            @media only screen and (max-width : 540px) {
+               top: 20px;
+               left: 8%;
+            }
+            @media only screen and (max-width : 330px) {
+              top: 10px;
+              left: 5%;
+            }
+
+            .video-play-arrow {
+              width: 15%;
+              margin-bottom: 17%;
+              cursor: pointer;
+              @media only screen and (max-width : 540px) {
+                margin-bottom: 10%;
+              }
+              @media only screen and (max-width : 330px) {
+                margin-bottom: 5%;
+              }
+            }
+
+            p { 
+              font-family: 'Sentinel 4i', 'Sentinel A', 'Sentinel B';
+              color: @white; 
+              font-style: italic;
+              font-size: 1.2em;
+              max-width: 50%;
+              @media only screen and (max-width : 430px) {
+                max-width: 70%;
+              }
+            }
+
+            hr {
+              border-top: 1px solid @white;
+              display: block;
+              margin: 15px 0;
+              width: 20%;
+              @media only screen and (max-width : 380px) {
+                 display: none;
+              }
+            }
+          }
+        }
+      }
+
+      .column-two {
+        .mobile-arrow-up;
+        width: 25%;
+        margin-top: 41px;
+        background: @white;
+        padding: 30px 2.14% 40px;
+        .main-padding();
+        img { width: 44.8780488%; }
+      }
+    }
+  }
+
+  .row {
+    margin-bottom: 30px;
+
+    p { margin-bottom: 5px; }
+    .job { margin-bottom: 20px; }
+
+    h6 {
+      font-style: italic;
+      margin-bottom: 5px;
+      font-size: 0.9375em;
+    }
+
+    .gray-box {
+      position: relative;
+      width: 89%;
+      padding: 40px;
+      background: @ltGray3;
+      margin: 20px 0;
+      h4 { margin-bottom: 10px; }
+    }
+  }
+
+  form {
+
+    .form-row {
+      position: relative;
+
+      &:after { .clear; }
+
+      .column-one,
+      .column-two {
+        float: left;
+        margin-bottom: 20px;
+        width: 45%;
+      }
+
+      input {
+        float: left;
+        font-size: 1em;
+        width: 43%;
+        padding: 5px;
+        margin-bottom: 20px;
+      }
+
+      .customStyleSelectBox {
+        cursor: pointer;
+        margin-right: 5%;
+        padding: 4px 100px 4px 20px;
+      }
+
+      .button { padding: 10px 16px 8px; }
+
+      ul {
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        margin-top: 5px;
+        z-index: 10;
+        display: none;
+        max-height: 261px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        li {
+          background-color: @white;
+          padding: 4px 19px 4px 20px;
+          margin: 0;
+          border-bottom: 1px solid @ltGray;
+          border-left: 1px solid @ltGray;
+          border-right: 1px solid @ltGray;
+          cursor: pointer;
+
+          &:hover { background-color: @ltGray2; }
+          a { color: @fontColor; }
+        }
+      }
+    }
+  }
+
+  .row-six {
+    .column-one {
+      .mobile-arrow-down;
+      width: 30%; /*42.0408163%*/
+      background: @white;
+      padding: 30px 2.1428571% 40px;
+      margin-top: 8%;
+      .main-padding();
+    }
+
+    .column-two { 
+      width: 65%;
+      .white-arrow-right {
+        width: 13px;
+        position: absolute;
+        top: 45%;
+        z-index: 10;
+      }
+    }
+  }
+  .row-seven {
+    .column-one { 
+      width: 70%;
+      .white-arrow-left {
+        width: 13px;
+        position: absolute;
+        top: 35%;
+        right: 0;
+        z-index: 10;
+      }
+    }
+
+    .column-two {
+      .mobile-arrow-up;
+      width: 25%;
+      margin-top: 41px;
+      background: @white;
+      padding: 30px 2.14% 40px;
+      .main-padding();
+      img { width: 44.8780488%; }
+    }
+  }
+  .row-eight {
+    .column-one {
+      .mobile-arrow-down;
+      width: 31.7%; /*42.0408163%*/
+      background: @white;
+      padding: 30px 2.1428571% 40px;
+      .main-padding();
+      .button {
+        margin-bottom: 10px;
+      }
+    }
+
+    .column-two {
+      .white-arrow-right {
+        width: 13px;
+        position: absolute;
+        top: 25%;
+        z-index: 10;
+      }
+      width: 63.3%; 
+      margin-top: 8%;
+    }
+  }
+
+}
+
+@media only screen and (max-device-width : 1020px), only screen and (max-width: 480px) {
+  .careers {
+    .sub-header { background-image: url(../img/_mobile/headers/Career_Main_Mobile.jpg); }
+    .mobile-main;
+
+    .page-layout-1 {
+      h3 {
+        font-size: 2em;
+        width: 100%;
+      }
+      p {
+        font-size: 1.5em;
+        width: 100%;  
+      }
+    }
+    .main-content {
+      .mobile-main-columns;
+      .mobile-button;
+      a.button {
+        margin-top: 20px; 
+      }
+      .row {
+        .gray-box { display: none; }
+      }
+
+      .row-one {
+        .column-one {
+          br { display: none; }
+        }
+      }
+      .white-arrow-right, 
+      .white-arrow-left {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 445px) {
+   .careers {
+    .main-content {
+      .row-eight {
+        .column-one {
+          .button {
+            font-size: 1em !important;
+          }
+        }
+      }
+    }
+   }
+}

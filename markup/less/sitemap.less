@@ -1,0 +1,89 @@
+.sitemap {
+
+  .footer-nav-6 {
+    > a { color: @blue !important; }
+    &:hover > a { color: @white !important; }
+  } 
+
+  .sub-header { background-image: url(../img/header-img-1.jpg); }
+
+  .main-content {
+    zoom: 1;
+
+    &:after { .clear; }
+    hr { display: block; margin: 20px 0; }
+
+    h1 {
+      width: 75%;
+      white-space: normal;
+    }
+
+    .columns {
+      float: left;
+
+      .sections { 
+        margin-bottom: 40px;
+        
+        &:last-child { margin-bottom: 0;}
+      }
+
+      a {
+        font-family: 'proxima_nova_rgbold', arial, sans-serif;
+        margin-bottom:  15px;
+        display: block;
+        font-size: 0.9375em;
+      }
+
+      h4 { margin-bottom: 15px; }
+
+      ul {
+        li {
+          ul {
+            margin-left: 20px;
+            li {
+              a { 
+                font-family: 'proxima_nova_rgregular', arial, sans-serif;
+              }
+            }
+          }
+        }
+      }
+
+      &.column-1 { width: 31%; }
+      &.column-2 { width: 35%; }
+      &.column-3 { width: 21%; }
+      &.column-2,
+      &.column-3 { 
+        padding-left: 6%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+  .sitemap {
+    .sub-header { background-image: url(../img/_mobile/headers/404LegalSiteMapContact_Mobile.jpg); }
+    .mobile-main;
+
+    .main-content {
+      h1 {
+        width: 100%;
+      }
+      .columns {
+        width: 100% !important;
+        float: none;
+        margin-bottom: 20px;
+        padding-left: 0 !important;
+        a { font-size: 1.5em; }
+        ul {
+          font-size: 1em;
+          ul {
+            li {
+              a { font-size: 1.5em !important; }
+            }
+          }
+        }
+      }
+    }
+  } 
+}

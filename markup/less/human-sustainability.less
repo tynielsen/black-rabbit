@@ -1,0 +1,243 @@
+.human-sustainability {
+
+  .main-nav-2 > a,
+  .main-nav-2-6 a { color: @blue !important; }
+
+  .sub-header {
+    background-image: url(../img/header-img-35.jpg);
+    margin-bottom: 0;
+  }
+
+  .main-content {
+    width: 70%;
+    margin: 0 auto 75px;
+    overflow: visible;
+
+    a {
+      margin-bottom: 25px;
+      font-size: 0.9375em;
+    }
+
+    h2 { 
+      font-size: 2.1875em; 
+      line-height: 1.2em;
+    }
+
+    img.brand { margin-bottom: 15px; }
+    p { margin-bottom: 25px; }
+    .long { margin: 0; }
+
+    .fun-fact {
+      /*width: 21.3265306%;*/
+      width: 36.7957746%;
+      padding: 25px;
+      background: @blue;
+      color: @white;
+      position: absolute;
+      bottom: -68px;
+      right: -1px;
+
+      h3 {
+        font-family: 'proxima_novasemibold', arial, sans-serif;
+        font-size: .8125em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 0.875em;
+        line-height: 1.3em;
+        text-align: center;
+        margin-bottom: 0;
+      }
+    }
+
+    .row-one,
+    .row-two,
+    .row-three,
+    .row-four,
+    .row-five {
+
+      &:after { .clear; }
+
+      .column-one,
+      .column-two { 
+        float: left;
+        zoom: 1;
+
+      p { color: @ltGray2; }
+      }
+
+      .button { margin-bottom: 30px; }
+    }
+
+    .row-one {
+      background: @white;
+      padding: 69px 20% 40px 10%;
+      margin-top: 45px;
+     
+      p { font-size: .93em; }
+    }
+
+    .row-two {
+      margin-top:65px;
+
+      .column-one {
+        .mobile-arrow-down;
+        background: @white;
+        width: 27%;
+        margin-top: 165px;
+        padding: 30px 2% 40px;
+        .main-padding();
+      }
+
+      .column-two {
+        width: 68%;
+
+        img {
+          float: left;
+          width: 111%;
+        }
+      }
+    }
+
+    .row-three {
+
+      .column-one { width: 68%; }
+
+      .column-two {
+        .mobile-arrow-up;
+        background: @white;
+        width: 27%;
+        margin-top: 140px;
+        padding: 30px 2% 40px;
+        .main-padding();
+      }
+    }
+
+    .row-four {
+
+      .column-one {
+        .mobile-arrow-down;
+        background: @white;
+        width: 27%;
+        margin-top: 65px;
+        padding: 30px 2% 40px;
+        .main-padding();
+      }
+
+      .column-two {
+        width: 68%;
+        position: relative;
+
+        img { width: 85%; }
+
+        .call-out {
+          width: 27%;
+          padding: 30px 4%;
+          background: @blue;
+          color: @white;
+          position: absolute;
+          bottom: 8%;
+          right: -10%;
+
+          h3 {
+            font-family: 'proxima_novasemibold', arial, sans-serif;
+            font-size: .8125em;
+            text-align: center;
+            margin-bottom: 5px;
+            font-weight: 300;
+          }
+
+          p {
+            font-size: 0.875em;
+            line-height: 1.3em;
+            text-align: center;
+            margin-bottom: 0;
+            color: @white;
+          }
+        }
+      }
+    }
+  }
+}
+
+/************************************************************************************************
+ *
+ *  @Section: Mobile Specific Styles and Media Queries
+ *
+ *************************************************************************************************/
+@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+
+  .human-sustainability {
+
+    .sub-header { background-image: url(../img/_mobile/headers/WhatWeBelieve_HumanMain_Mobile.jpg); }
+    .mobile-main;
+
+    .main-content {
+      width: 100%;
+      margin: auto 0.5%;
+      .mobile-images;
+
+      .row-two,
+      .row-three,
+      .row-four {
+        width: 90%;
+        margin: auto 5%;
+      }
+
+      .row-one {
+        width: 80%;
+        padding: 30px 5%;
+        margin: auto 5%;
+      }
+
+      .row-two {
+        margin-top: 0px;
+        
+        .column-one {
+          margin-top: 20px;
+        }
+
+        .column-two {
+          margin-top: 0px;
+          width: 100%;
+
+          img { width: 100%; }
+        }
+      }
+
+      .row-three {
+        margin-top: 20px;
+        
+        .column-one {
+          width: 100%;
+
+          img { width: 100%; }
+        }
+
+        .column-two {
+          margin-top: 0px;
+        }
+      }
+
+      .row-four {
+        margin-top: 0px;
+        margin-bottom: 20px;
+
+        .column-one { margin-top: 20px; }
+
+        .column-two {
+          width: 100%;
+          img { width: 100%; }
+
+        .column-two { width: 100%; }
+          .call-out { display: none; }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,216 @@
+.contact-m {
+
+  .sub-header {
+    background-image: url(../img/header-img-1.jpg);
+    margin-bottom: 0;
+    border: none 0;
+  }
+
+  .magellan-scrollbar {
+
+    ul {
+      li { padding: 0 3.15%; }
+    }
+  }
+
+  h3 {
+    font-family: "proxima_nova_rgbold", arial;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    margin-bottom: 0.5em;
+  }
+
+  h4 {
+    font-family: "proxima_nova_rgbold", arial;
+    font-size: 0.9375em;
+    line-height: 1.25em;
+    margin-bottom: 5px;
+  }
+
+  p { margin-bottom: 20px; }
+
+  ul { margin-left: 0 !important; }
+
+  .main-content {
+    a {
+      color: @blue;
+      margin-bottom: 10px;
+
+      &.blue-button { color: @white; }
+    }
+
+    p {
+      &.no-margin { margin-bottom: 0; }
+      &.short { max-width: 70% !important; }
+    }
+    .contact-info {
+      position: relative;
+    }
+
+    .column-one {
+      img {
+        max-width: 40%;
+        width: auto;
+        max-height: 150px;
+        float: right;
+      }
+
+      h3 {
+        margin-top: 20px;
+        background: @ltGray3;
+        text-align: center;
+        border-bottom: 1px solid @ltGray;
+        padding: 20px 0;
+      }
+    }
+
+    .row-two {
+      margin-bottom: 50px;
+
+      #info-pepsico-corporate {
+
+        .column-one {
+          ul { margin-bottom: 15px; }
+        }
+      }
+
+      .column-one {
+        float: left;
+        margin-right: 10%;
+      }
+
+      .column-two {
+        width: 24.8%;
+        float: left;
+        margin-right: 10%;
+      }
+      
+      ul.subnav-contact-info {
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #cfd0d1;
+        height: 54px;
+        margin-bottom: 31px;
+
+        li {
+          display: block;
+          float: left;
+          display: inline-block;
+          vertical-align: top;
+          padding-bottom: 13px;
+
+          a {
+            font-family: "proxima_novasemibold", arial;
+            font-size: 1.0625em;
+            line-height: 54px;
+            color: @fontColor;
+            display: block;
+            padding: 0 18px;
+            white-space: nowrap;
+            text-align: left;
+
+            &:hover {
+              color: @white;
+              background: @blue;
+            }
+          }
+
+          &:hover,
+          &.active {
+            background: transparent url('../img/contact-down-arrow.gif') no-repeat 50% 54px;
+
+            a {
+              background: @blue;
+              color: @white;
+            }
+          } 
+        }
+      }
+
+      &:after { .clear; }
+    }
+
+    .row-four {
+      /* Notes: Media Contacts */
+      margin-bottom: 50px;
+
+      .column-one {
+        width: 45%;
+        float: left;
+        margin-right: 10%;
+      }
+
+      .column-two {
+        width: 45%;
+        float: left;
+
+        ul { margin: 30px 0; }
+      }
+
+      &:after { .clear; }
+    }
+
+    .row-six {
+      margin-bottom: 50px;
+
+      .column-one {
+        width: 45%;
+        float: left;
+        margin-right: 10%;
+
+        p.top-margin { margin-top: 20px; }
+      }
+
+      .column-two {
+        width: 45%;
+        float: left;
+
+        ul { margin: 0 0 20px 0; }
+      }
+
+      &:after { .clear; }
+    }
+
+    .row-eight {
+      margin-bottom: 50px;
+
+      .column-one { width: 45%; }
+    }
+
+    .row-ten {
+      margin-bottom: 50px;
+
+      p.no-margin { margin-bottom: 0; }
+    }
+
+    .row-twelve {
+
+      ul { margin-bottom: 20px; }
+
+      .column-one {
+        width: 24.8%;
+        float: left;
+      }
+
+      .column-two {
+        width: 24.8%;
+        float: left;
+      }
+    }    
+  }
+}
+
+@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+  .contact-m {
+    .sub-header { background-image: url(../img/_mobile/headers/404LegalSiteMapContact_Mobile.jpg); }
+    .mobile-main;
+
+    .main-content {
+      .column-one,
+      .column-two,
+      .column-three {
+        width: 100% !important;
+      }
+      a { word-break: break-word; }
+    }
+  } 
+}

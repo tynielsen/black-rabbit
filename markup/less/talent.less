@@ -1,0 +1,87 @@
+.talent {
+  .main-nav-2 > a,
+  .main-nav-2-16 a { color: @blue !important; }
+
+  .sub-header {
+    background-image: url(../img/header-img-46.jpg);
+    margin-bottom: 0;
+  }
+
+  .main-content {
+    overflow: visible;
+
+    h2 { 
+      font-size: 2.1875em;
+      line-height: 1.2em;
+    }
+
+    .full-length { margin: 0; }
+
+    .open {
+      width: 70%;
+      margin: 0 auto 75px;
+      overflow: visible;
+      max-width: 920px;
+
+      .button { margin: 15px 0 30px; }
+
+      .row-four, .row-six {
+        position: relative;
+
+        .column-one { width: 68.57%; }
+        
+        .column-two {
+          .mobile-arrow-up;
+          width: 27.15%;
+          padding: 30px 2.14% 40px;
+          background: @white;
+          margin-top: 50px;
+          .main-padding();
+        }
+      }
+
+      .row-three, .row-five {
+        position: relative;
+
+        .column-one {
+          .mobile-arrow-down;
+          width: 27.15%;
+          padding: 30px 2.14% 40px;
+          background: @white;
+          margin-top: 50px;
+          .main-padding();
+        }
+        
+        .column-two { width: 68.57%; }
+      }
+
+      .column-one,
+      .column-two { float: left; }
+    }
+
+    p { margin-bottom: 15px; }
+  }
+}
+
+
+/************************************************************************************************
+ *
+ *  @Section: Mobile Specific Styles and Media Queries
+ *
+ *************************************************************************************************/
+@media only screen and (max-device-width : 1020px), only screen and (max-width: 480px) {
+  .talent {
+    .sub-header { background-image: url(../img/_mobile/headers/WhatWeBelieve_TalentMain_Mobile.jpg); }
+    .mobile-main;
+
+    .main-content {
+      width: 100%;
+      margin: 0 0.5%;
+      .open {
+        width: 95%;
+        .mobile-main-columns;
+        .mobile-button;
+      }
+    }
+  }
+}

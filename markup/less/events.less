@@ -1,0 +1,108 @@
+.events {
+
+  .main-nav-4 > a,
+  .main-nav-4-2 a { color: @blue !important; }
+
+  .sub-header {
+    background-image: url(../img/header-img-11.jpg);
+    margin-bottom: 0;
+    border-bottom: none;
+    @media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+      background-image: url(../img/_mobile/headers/Investors_All_Mobile.jpg);
+    }
+  }
+
+  .magellan-scrollbar {
+    ul {
+      li { padding: 0 10.4%; }
+    }
+  }
+
+  h1 {
+    max-width: 90%;
+    white-space: normal;
+  }
+
+  h2 { color: #005580; }
+  h3 { font-size: 1.3em; }
+  .short { margin: 10px 0; }
+  .full { width: 100%; }
+
+  .gray-box {
+    position: relative;
+    padding: 25px;
+    background: @ltGray3;
+    margin: 20px 0;
+    
+    &:first-child { margin-top: 0; }
+
+    .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 1px 5px 3px 5px;
+      background-color: @blue;
+      cursor: pointer;
+
+      .icon-close {
+        background-image: url(../img/icon-close.png);
+        cursor: pointer;
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    &:after { .clear; }
+
+    h4 {
+      color: @fontColor;
+      font-size: 1.3em;
+      cursor: pointer;
+      @media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+        max-width: 90% !important; 
+      }
+    }
+
+    h5 {
+      color: @ltGray2;
+      float: right;
+      padding: 25px 5% 0 0;
+    }
+
+    .full-length { width: 100%; }
+
+    .expand-box {
+      display: none;
+
+      &:before { .clear; }
+    }
+
+    .download {
+      margin-bottom: 10px;
+
+      &:last-child { margin-bottom: 0; }
+      i { float: left; }
+    }
+  }
+}
+
+@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+  .events {
+    .sub-header { background-image: url(../img/_mobile/headers/Investors_All_Mobile.jpg); }
+    .mobile-main;
+
+    .main-content {
+      width: 100%;
+      margin: 0 0.5%;
+      .gray-box {
+        .mobile-gray-box;
+        .mobile-open-close-icons;
+        .expand-box {
+          .mobile-file-icons;
+          a { word-break: break-word; }
+          ul { width: 100%; }
+        }
+      }
+    }
+  } 
+}

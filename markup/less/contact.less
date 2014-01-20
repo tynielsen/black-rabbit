@@ -1,0 +1,303 @@
+.contact {
+
+  .footer-nav-4 {
+    > a { color: @blue !important; }
+    &:hover > a { color: @white !important; }
+  } 
+
+  .sub-header {
+    background-image: url(../img/header-img-1.jpg);
+    margin-bottom: 0;
+    border: none 0;
+  }
+
+  .magellan-scrollbar {
+
+    ul {
+
+      li { padding: 0 3.15%; }
+    }
+  }
+
+  h3 {
+    font-family: "proxima_nova_rgbold", arial;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    margin-bottom: 0.5em;
+  }
+
+  h4 {
+    font-family: "proxima_nova_rgbold", arial;
+    font-size: 0.9375em;
+    line-height: 1.25em;
+    margin-bottom: 5px;
+  }
+
+  p { margin-bottom: 20px; }
+
+  .main-content {
+    min-width: 800px;
+
+    a {
+      color: @blue;
+      font-size: 0.9375em;
+      margin-bottom: 10px;
+
+      &.blue-button { color: @white; }
+    }
+
+    p {
+      font-size: 0.9375em;
+
+      &.no-margin { margin-bottom: 0; }
+    }
+
+    ul.address {
+      margin-bottom: 10px;
+
+      li {
+        font-size: 0.9375em;
+        line-height: 1.25em;
+      }
+    }
+
+    .row-two {
+      margin-bottom: 50px;
+      height: 347px;
+
+      #info-pepsico-corporate {
+
+        .column-one {
+          width: 100%;
+
+          ul { margin-bottom: 15px; }
+        }
+      }
+
+      .column-one {
+        width: 24.8%;
+        float: left;
+        margin-right: 10%;
+      }
+
+      .column-two {
+        width: 24.8%;
+        float: left;
+        margin-right: 10%;
+      }
+
+      .column-three {
+        width: 24.8%;
+        float: left;
+
+        p { margin-bottom: 15px; }
+        img { margin: 0 auto 30px; }
+      }
+
+      div.contact-info { display: none; }
+      div.active { display: block; }
+
+      div#info-pepsico-corporate {
+
+        .column-three {
+
+          img { width: 79.5%%; }
+        }
+      }
+
+      div#info-pepsi {
+
+        .column-three {
+
+          img { 
+            max-width: 85px;
+            max-height: 114px;
+            margin: 0 0 30px 41px;
+          }
+        }
+      }
+
+      div#info-frito-lay {
+
+        .column-three {
+
+          img { 
+            width: 143px;
+            margin: 0 0 30px 17px;
+          }
+        }
+      }
+
+      div#info-quaker {
+
+        .column-three {
+
+          img { 
+            width: 93px; 
+            margin: 0 0 30px 40px;
+          }
+        }
+      }
+
+      div#info-tropicana {
+
+        .column-three {
+
+          img { 
+            width: 162px;
+            margin: 0 0 30px 5px; 
+          }
+        }
+      }
+
+      div#info-gatorade {
+
+        .column-three {
+
+          img {
+            width: 110px;
+            margin: 0 0 30px 36px;
+          }
+        }
+      }
+
+      div#info-global {
+
+        .column-three {
+
+          img { width: 43.5%; }
+        }
+      }
+
+      ul.subnav-contact-info {
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #cfd0d1;
+        height: 54px;
+        margin-bottom: 31px;
+
+        li {
+          display: block;
+          float: left;
+          display: inline-block;
+          vertical-align: top;
+          padding-bottom: 13px;
+
+          a {
+            font-family: "proxima_novasemibold", arial;
+            font-size: 1.0625em;
+            line-height: 54px;
+            color: @fontColor;
+            display: block;
+            padding: 0 18px;
+            white-space: nowrap;
+            text-align: left;
+
+            &:hover {
+              color: @white;
+              background: @blue;
+            }
+          }
+
+          &:hover,
+          &.active {
+            background: transparent url('../img/contact-down-arrow.gif') no-repeat 50% 54px;
+
+            a {
+              background: @blue;
+              color: @white;
+            }
+          } 
+        }
+      }
+
+      &:after { .clear; }
+    }
+
+    .row-four {
+      /* Notes: Media Contacts */
+      margin-bottom: 50px;
+
+      .column-one {
+        width: 45%;
+        float: left;
+        margin-right: 10%;
+      }
+
+      .column-two {
+        width: 45%;
+        float: left;
+
+        ul { margin: 30px 0; }
+      }
+
+      &:after { .clear; }
+    }
+
+    .row-six {
+      margin-bottom: 50px;
+
+      .column-one {
+        width: 45%;
+        float: left;
+        margin-right: 10%;
+
+        p.top-margin { margin-top: 20px; }
+      }
+
+      .column-two {
+        width: 45%;
+        float: left;
+
+        ul { margin: 0 0 20px 0; }
+      }
+
+      &:after { .clear; }
+    }
+
+    .row-eight {
+      margin-bottom: 50px;
+
+      .column-one { width: 45%; }
+    }
+
+    .row-ten {
+      margin-bottom: 50px;
+
+      p.no-margin { margin-bottom: 0; }
+    }
+
+    .row-twelve {
+
+      ul { margin-bottom: 20px; }
+
+      .column-one {
+        width: 24.8%;
+        float: left;
+      }
+
+      .column-two {
+        width: 24.8%;
+        float: left;
+      }
+    }    
+  }
+}
+
+
+/************************************************************************************************
+ *
+ *  @Section: Mobile Specific Styles and Media Queries
+ *
+ *************************************************************************************************/
+@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+
+  .contact {
+
+    .sub-header { background-image: url(../img/_mobile/headers/404LegalSiteMapContact_Mobile.jpg); }
+
+    .main-content {
+    
+      .row-two { height: auto; }
+    }
+  }
+}

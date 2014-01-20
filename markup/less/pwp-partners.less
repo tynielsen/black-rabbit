@@ -1,0 +1,90 @@
+.partners {
+
+	.main-nav-2 > a,
+	.main-nav-2-26 a { color: @blue !important; }
+
+  .sub-header {
+  	background-image: url(../img/header-img-38.jpg);
+		margin-bottom: 0;
+  }
+
+	.main-content {
+		position: relative;
+		overflow: visible;
+
+		h2 {
+			color: #005580;
+			max-width: 60%;
+		}
+
+		h4 {
+			display: block;
+			margin-bottom: 20px;
+		}
+
+		h5 {
+			font-family: "proxima_novasemibold", arial, sans-serif;
+		}
+
+		p {
+			margin-bottom: 15px;
+			max-width: 90%;
+		}
+
+		ul {
+			list-style: disc;
+			margin-left: 5%;
+			li { margin-bottom: 5px; }
+		}
+
+		&:after { .clear; }
+
+		.row {
+			margin-bottom: 40px;
+			&:after { .clear; }
+
+			&.title { margin-bottom: 10px;}
+
+			.col {
+				float: left;
+				width: 45%;
+				margin-right: 5%;
+				&:last-child { margin-right: 0;}
+
+				&.small { width: 35%; }
+
+				a {
+					display: block;
+					margin-bottom: 5px;
+				}
+			}
+
+			.offset-right-30 { 
+				padding: 0;
+				&.shrink { margin-top: -40px; }
+			}
+
+			.left {
+				margin-left: -50%;
+				padding: 0 5%;
+			}
+
+			.right {
+				margin-right: -60%;
+				padding: 0 5%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+	.partners {
+		.sub-header { background-image: url(../img/_mobile/headers/WhatWeBelieve_PWPAllPG_Mobile.jpg); }
+		.mobile-main;
+		.main-content {
+			.row {
+				.mobile-columns;
+			}
+		}
+	}	
+}

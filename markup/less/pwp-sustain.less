@@ -1,0 +1,113 @@
+.sustain {
+
+  .main-nav-2 > a,
+  .main-nav-2-5 a { color: @blue !important; }
+
+  .sub-header {
+    background-image: url(../img/header-img-43.jpg);
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .magellan-scrollbar {
+
+    ul {
+      li { padding: 0 4.1%; }
+    }
+  }
+
+	.main-content {
+		position: relative;
+		overflow: visible;
+
+		h2 {
+			color: #005580;
+			max-width: 90%;
+		}
+
+		h5 {
+			font-family: "proxima_novasemibold", arial, sans-serif;
+			margin-bottom: 10px;
+			max-width: 90%;
+		}
+
+		p {
+			margin-bottom: 15px;
+			max-width: 90%;
+		}
+
+		&:after { .clear; }
+
+		.row {
+			margin-bottom: 40px;
+      word-break: break-word;
+			&:after { .clear; }
+
+			.offset-right-45 {
+				margin-left: 20px;
+				padding:0 ;
+			}
+
+			.gray-box {
+				width: 90%;
+				padding: 25px;
+				background: @ltGray3;
+				margin: 30px 0;
+
+				&:after { .clear; }
+
+        h4 {
+          font-size: 1.3em;
+        }
+
+    		.full-length { width: 100%; }
+
+    		.col {
+  				float: left;
+  				max-width: 45%;
+  				margin-right: 5%;
+  				@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+  					float: none;
+  					max-width: 100%;	
+  				}
+  			}
+
+  			.single { 
+  				max-width: 60%;
+  				@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+  					max-width: 100%;	
+  				}
+  			}
+
+    		.download {
+    			margin-bottom: 10px;
+
+        	i {
+        		float: left;
+        		margin-right: 5px;
+        		margin-bottom: 10px;
+        	}
+        }
+	    }
+		}
+	}
+}
+
+@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+  .sustain {
+    .sub-header { background-image: url(../img/_mobile/headers/WhatWeBelieve_PWPAllPG_Mobile.jpg); }
+    .mobile-main;
+
+    .main-content {
+      .row {
+        .mobile-images;
+        .gray-box {
+          .mobile-gray-box;
+          .download {
+            i { .mobile-download-icon; }
+          }
+        }
+      }
+    }
+  }
+}

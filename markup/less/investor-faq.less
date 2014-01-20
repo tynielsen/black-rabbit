@@ -1,0 +1,108 @@
+.faq {
+
+  .main-nav-4 > a,
+  .main-nav-4-8 a { color: @blue !important; }
+
+  .sub-header {
+    background-image: url(../img/header-img-11.jpg);
+    margin-bottom: 0;
+  }
+
+	h1 {
+		max-width: 80%;
+		white-space: normal;
+	}
+
+	h2 { color: #005580; }
+	h3 { font-size: 1.3em; }
+	.short { margin: 10px 0; }
+
+	.gray-box {
+		position: relative;
+		padding: 25px;
+		background: @ltGray3;
+		margin: 20px 0;
+
+    &:after { .clear; }
+
+		.icon {
+			position: absolute;
+			right: 0;
+      top: 0;
+			padding: 1px 5px 3px 5px;
+			background-color: @blue;
+			cursor: pointer;
+
+			.icon-close {
+        background-image: url(../img/icon-close.png);
+        cursor: pointer;
+        width: 12px;
+        height: 12px;
+      }
+		}
+
+    h4 {
+    	color: @fontColor;
+      font-size: 1.3em;
+      max-width: 80% !important;
+      cursor: pointer;
+    }
+
+    h5 {
+      font-family: "proxima_novasemibold", arial, sans-serif;
+      margin-bottom: 5px;
+      max-width: 90%;
+    }
+
+    p {
+      margin-bottom: 20px;
+      max-width: 85%;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 3%;
+      margin-bottom: 20px;
+      width: 68%;
+
+      li { margin-bottom: 20px; }
+    }
+
+    .full-length { width: 100%; }
+
+    .expand-box {
+      margin-top: 20px;
+      display: none;
+    }
+
+    .download {
+    	margin-bottom: 20px;
+
+    	img {
+    		width: 18px;
+    		float: left;
+    		margin-right: 5px;
+        margin-bottom: 5px;
+    	}
+    }
+  }
+}
+
+@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+  .faq {
+    .sub-header { background-image: url(../img/_mobile/headers/Investors_All_Mobile.jpg); }
+    .mobile-main;
+
+    .main-content {
+      width: 100%;
+      margin: 0 0.5%; 
+      .gray-box {
+        .mobile-open-close-icons;
+        .expand-box {
+          a { word-break: break-word; }
+          ul { width: 100%; }
+        }
+      }
+    }
+  }
+}

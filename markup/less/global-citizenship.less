@@ -1,0 +1,212 @@
+.global-citizenship {
+
+  .main-nav-2 > a,
+  .main-nav-2-21 a { color: @blue !important; }
+
+  .sub-header {
+    background-image: url(../img/header-img-30.jpg);
+    margin-bottom: 0;
+  }
+
+  .main-content {
+    overflow: visible;
+
+    h2 {
+      font-size: 2.1875em;
+      line-height: 1.2em;
+
+      h3 { font-size: 1.2em; }
+    }
+
+    .full-length { margin: 0; }
+
+    .row-two {
+    	
+      .quote {
+        width: 70%;
+        border-left: 1px solid @ltGray;
+        padding-left: 20px;
+        margin: 25px 0 0 0;
+        color: @blue;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        margin-bottom: 15px;
+      }
+
+      span {
+        color: @fontColor;
+        display: block; 
+        font-size: 0.8em ;
+        margin-top: 10px;
+      }
+    }
+
+    .open {
+      width: 70%;
+      margin: 0 auto 75px;
+      overflow: visible;
+      max-width: 920px;
+
+      .button {
+        margin: 15px 0 30px;
+      }
+
+      .blue-box {
+        .border-box();
+        background: @blue;
+        color: @white;
+        font-size: .9375em;
+        padding: 30px 15px;
+        position: absolute;
+        text-align: center;
+        width: 31.25%;
+
+        h5 {
+          font-size: .8125em;
+          margin-bottom: 20px;
+          text-transform: uppercase;
+        }
+      }
+
+      .row-four {
+        position: relative;
+
+        .column-one {
+          width: 68.57%;
+
+          .blue-box {
+            top: 30%;
+            left: -7%;
+          }
+        }
+        
+        .column-two {
+          .mobile-arrow-up;
+          width: 27.15%;
+          margin-top: 135px;
+          padding: 30px 2.14% 40px;
+          background: @white;
+          .main-padding();
+        }
+      }
+
+      .row-three, .row-five {
+        position: relative;
+
+        .column-one {
+          .mobile-arrow-down;
+          width: 27.15%;
+          padding: 30px 2.14% 40px;
+          background: @white;
+          .main-padding();
+        }
+        
+        .column-two {
+          width: 68.57%;
+
+          .blue-box {
+            top: 30%;
+            right: -7%;
+          }
+        }
+      }
+
+      .row-three .column-one { margin-top: 130px; }
+      .row-four .column-two { margin-top: 100px; }
+      .row-five .column-one { margin-top: -30px; }
+      .column-one, .column-two { float: left; }
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ul.disc {
+      list-style-type: disc;
+      margin: 0 0 15px 20px;
+    }
+
+    .video {
+      position: relative;
+      zoom: 1;
+
+      &:after { .clear; }
+
+      .vid-content {
+        width: 50%;
+        position: absolute;
+        top: 35px;
+        left: 10%;
+        margin-top: 20px;
+
+        .video-play-arrow {
+          width: 15%;
+          margin-bottom: 25%;
+          cursor: pointer;
+        }
+
+        h3 {
+          color: @white;
+          font-size: 1.5em;
+          max-width: 50%;
+        }
+
+        a { margin-right: 20px; }
+
+        hr {
+          border-top: 1px solid @white;
+          display: block;
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+
+/************************************************************************************************
+ *
+ *  @Section: Mobile Specific Styles and Media Queries
+ *
+ *************************************************************************************************/
+@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+
+  .global-citizenship {
+
+    .sub-header { background-image: url(../img/_mobile/headers/WhatWeBelieve_GlobalCitizenship_Main_Mobile.jpg); }
+    .mobile-main;
+
+    .main-content {
+      width: 100%;
+      margin: auto 0.5%;
+      .mobile-images;
+
+      .video {
+        .vid-content {
+          .mobile-video;
+        }
+      }
+      .open {
+        width: 90%;
+        .mobile-main-columns;
+      }
+      .row-two {
+        .quote {
+          padding-top: 20px;
+          padding-bottom: 20px;
+          float: none;
+          width: 100%;
+          border-left: none;
+          border-top: 2px solid #808080;
+          border-bottom: 2px solid #808080;
+          margin-bottom: 20px;
+          height: auto;
+          margin-left: -2%;
+          h4, p { font-size: 1.5em; }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,208 @@
+.water {
+
+	.main-nav-2 > a,
+	.main-nav-2-11 a { color: @blue !important; }
+
+  .sub-header {
+  	background-image: url(../img/header-img-47.jpg);
+		margin-bottom: 0;
+		border-bottom: none;
+  }
+
+  .magellan-scrollbar {
+    ul {
+      li { padding: 0 12.02%; }
+    }
+  }
+
+	.main-content {
+		position: relative;
+		overflow: visible;
+
+		&:after { .clear; }
+
+		h2 {
+			color: #005580;
+			max-width: 95%;
+		}
+
+		h3 {
+			margin-bottom: 15px;
+			font-size: 1.2em;
+			max-width: 95%;
+		}
+
+		h5 {
+			font-family: "proxima_novasemibold", arial, sans-serif;
+			margin-bottom: 10px;
+			max-width: 95%;
+		}
+
+		p {
+			margin-bottom: 15px;
+			max-width: 90%;
+		}
+
+		.row {
+			margin-bottom: 40px;
+			
+			&:after { .clear; }
+			&.first { margin-bottom: 0; }
+
+			.right {
+				width: 35%;
+				float: right;
+				margin: 0 0 15px 15px;
+
+				&.small { width: 25%; }
+			}
+
+			.left {
+				width: 25%;
+				float: left;
+				margin: 0 15px 15px -4%;
+
+				&.small { width: 25%; }
+			}
+
+			.callout {
+				float: left;
+				color: @blue;
+				width: 40%;
+				border-left: 1px solid @ltGray;
+				margin: 0 15px 0 0 ;
+				padding-left: 20px;
+				height: 125px;
+
+				h4 { font-size: 1.2em; }
+			}
+
+			.did-you-know {
+				width: 20%;
+				padding: 25px;
+				background: @blue;
+				color: @white;
+				@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+					padding: 30px !important;	
+				}
+
+				h3 {
+					font-family: 'proxima_novasemibold', arial, sans-serif;
+					font-size: .8125em;
+					text-transform: uppercase;
+					text-align: center;
+					margin-bottom: 5px;
+				}
+
+				p {
+					font-size: 0.875em;
+					line-height: 1.3em;
+					text-align: center;
+					margin-bottom: 0;
+				}
+				
+				&.offset-left-20 {
+					margin-right: 20px;
+					margin-bottom: 10px;
+				}
+			}
+			.video {
+	      position: relative;
+	      zoom: 1;
+
+	      &:after { .clear; }
+
+	      .vid-content {
+	        width: 50%;
+	        position: absolute;
+	        top: 35px;
+	        left: 10%;
+	        margin-top: 20px;
+
+	        .video-play-arrow {
+	          width: 15%;
+	          margin-bottom: 10%;
+	          cursor: pointer;
+	        }
+
+	        h3 {
+	          color: @white;
+	          font-size: 1.5em;
+	          max-width: 50%;
+	        }
+
+		      p { 
+		      	font-family: 'Sentinel 4i', 'Sentinel A', 'Sentinel B';
+		      	color: @white; 
+		      	font-style: italic;
+		      	max-width: 80%;
+		    	}
+
+		      a { 
+		      	margin-right: 20px;
+		      	margin-top: 5%;
+		      }
+
+	        hr {
+	          border-top: 1px solid @white;
+	          display: block;
+	          margin: 15px 0;
+	        }
+	      }
+	    }
+		}
+	}
+}
+
+@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+	.water {
+		.sub-header { background-image: url(../img/_mobile/headers/WhatWeBelieve_Environmental_Water_Mobile.jpg);	}
+		.mobile-main;
+		.mobile-images;
+
+		.main-content {
+			.row {
+				.mobile-images-right-left-50;
+				.did-you-know {
+					.mobile-did-you-know;
+					width: 96%;
+					margin: 0 0 20px -7%
+				}
+				.video {
+					.vid-content {
+						.mobile-video;
+						h4 { max-width: 50%; }
+					}
+				}
+			}
+		}
+	}	
+}
+
+@media only screen and (max-width : 400px) {
+  .water {
+    .main-content {
+      .row {
+        .mobile-images-right-left-100;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 410px) {
+  .water {
+    .main-content {
+      .row {
+        .mobile-images-right-left-100;
+        .video {
+	      	.vid-content {
+	      		.video-play-arrow {
+	      			width: 15%;
+	      		}
+	      		h4 { display: none; }
+	      	}
+	      }
+      }
+    }
+  }
+}

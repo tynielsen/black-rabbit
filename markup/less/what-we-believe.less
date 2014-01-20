@@ -1,0 +1,357 @@
+.believe {
+
+  .main-nav-2 > a { color: @blue !important; }
+
+  .sub-header {
+    background-image: url(../img/header-img-23.jpg);
+    margin-bottom: 0;
+  }
+
+  .video {
+    position: relative;
+    zoom: 1;
+    padding:25px 0 0 0;
+    margin-left: -4.5% !important;
+
+    &:after { .clear; }
+
+    .vid-content {
+      width: 60%;
+      position: absolute;
+      top: 35px;
+      left: 10%;
+      margin-top: 20px;
+      height: 100%;
+
+      .video-play-arrow {
+        width: 20%;
+        margin-bottom: 25%;
+        cursor: pointer;
+      }
+
+      h3 {
+        color: @white;
+        font-size: 1.5em !important;
+      
+        @media only screen and (max-device-width : 1020px), only screen and (max-width: 480px) {
+        	max-width: 60% !important;	
+        }
+      }
+
+      img {
+        @media only screen and (max-device-width : 1020px), only screen and (max-width: 480px) {
+          width: 15% !important;	
+        }
+      }
+
+      .button {
+        margin-right: 20px;
+      }
+
+      hr {
+        border-top: 1px solid @white;
+        display: block;
+        margin: 15px 0;
+        
+        @media only screen and (max-device-width : 1020px), only screen and (max-width: 480px) {
+          margin-bottom: 10%;
+        }
+        @media only screen and (max-width : 500px) {
+          margin-bottom: 5%;
+        }
+      }
+    }
+  }
+
+  .main-content,
+  .page-layout-1 {
+    width: 70%;
+    margin: 30px auto 75px;
+    overflow: visible;
+    max-width: 920px;
+
+    a {
+      margin-bottom: 25px;
+      font-size: 0.9375em;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 3%;
+      margin-bottom: 20px;
+    }
+
+    h2 { 
+      font-size: 2.1875em;
+      line-height: 1.2em;
+    }
+
+    p { margin-bottom: 25px; }
+
+    .long { margin: 0; }
+
+    .did-you-know {
+      width: 25%;
+      padding: 25px;
+      background: @blue;
+      color: @white;
+      position: absolute;
+      bottom: -40px;
+      right: 75px;
+
+      h3 {
+        font-family: 'proxima_novasemibold', arial, sans-serif;
+        font-size: .8125em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 0.875em;
+        line-height: 1.3em;
+        text-align: center;
+        margin-bottom: 0;
+      }
+    }
+
+    .row {
+    
+      &:after { .clear; }
+    }
+
+    .callout {
+      width: 30%;
+      border-left: 1px solid @ltGray;
+      padding-top: 31px;
+      padding-left: 20px;
+      float: right;
+      margin: 25px 0 0 0;
+
+      h4 {
+        color: @blue;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        margin-bottom: 15px;
+      }
+
+      p { margin-left: 5%; }
+    }
+
+    .row-one,
+    .row-two,
+    .row-three,
+    .row-four {
+
+      .column-one,
+      .column-two { float: left; }
+
+      &:after { .clear; }
+    }
+
+    .row-one {
+
+      .column-one {
+        .mobile-arrow-down;
+        width: 30%;
+        background: @white;
+        padding: 30px 2.1428571% 40px;
+        margin-top: 7%;
+        .main-padding();
+      }
+
+      .column-two {
+        width: 60%;	
+        position: relative;
+      }
+    }
+
+    .row-two {
+
+      .column-one {
+        width: 60%;
+        margin-left: 5%;
+        position: relative;
+
+        .did-you-know {
+          left: 60px;
+        }
+      }
+
+      .column-two {
+        .mobile-arrow-up;
+        width: 30%;
+        margin-top: 2%;
+        background: @white;
+        padding: 30px 2.14% 40px;
+        .main-padding();
+      }
+    }
+
+    .row-three {
+
+      .column-one {
+        .mobile-arrow-down;
+        width: 25%;
+        background: @white;
+        padding: 30px 2.1428571% 40px;
+        margin-top: 4%;
+        .main-padding();
+      }
+
+      .column-two {
+        width: 65%;
+        margin-right: 5%;	
+        position: relative;
+      }
+    }
+
+    .row-four {
+
+      .column-one {
+        width: 65%;
+        margin-left: 5%;
+      }
+
+      .column-two {
+        .mobile-arrow-up;
+        width: 25%;
+        margin-top: 3%;
+        background: @white;
+        padding: 30px 2.14% 40px;
+        .main-padding();
+      }
+    }
+
+    #myModal {
+      border: 0;
+      padding: 0;
+      box-shadow: none;
+      position: fixed;
+
+      &.modal { background: transparent; }
+
+      .modal-header {
+        padding: 0;
+        border-bottom: 0;
+        color: white;
+        padding-left: 77.22222222%;
+
+        .close {
+          float: none;
+          margin: 0;
+          background: @blue;
+          text-shadow: none;
+          color: @white !important;
+          opacity: 1;
+          padding: 10px 30px;
+          font-weight: normal;
+          font-size: 1em;
+        }
+      }
+
+      .modal-body {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+/************************************************************************************************
+ *
+ *  @Section: Mobile Specific Styles and Media Queries
+ *
+ *************************************************************************************************/
+@media only screen and (max-device-width : 1020px), only screen and (max-width: 480px) {
+  
+  .believe {
+    
+    .sub-header { background-image: url(../img/_mobile/headers/WhatWeBelieve_Main_Mobile.jpg); }
+    .mobile-main;
+    .mobile-images;
+
+    .row {
+      margin-left: -20px;
+    }
+
+    .video {
+      margin-bottom: 60px;
+    
+      .vid-content {
+        width: 100%; 
+        .mobile-video;
+        .video-play-arrow {
+          margin-bottom: 60px;
+        }
+      }
+    }
+    
+    .page-layout-1 {
+    
+      .callout { .mobile-callout; }
+      .row { padding: 0 5%; }
+    }
+    
+    .main-content {
+      .mobile-main-columns;
+      .mobile-button;
+    }
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .believe {
+    .video {
+      .vid-content {
+        .video-play-arrow {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 425px) {
+  .believe {
+    .video {
+      .vid-content {
+        margin-top: 0;
+        .video-play-arrow {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 400px) {
+  .believe {
+    .video {
+      .vid-content {
+        .button {
+          position: absolute;
+          bottom: -32%;
+          margin-right: 0;
+          margin-left: -5%;
+          &.play {
+            right: -3%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 360px) {
+  .believe {
+    .video {
+      .vid-content {
+        .button { 
+          bottom: -40%;
+        }
+      }
+    }
+  }
+}

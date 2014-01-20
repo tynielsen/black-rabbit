@@ -1,0 +1,159 @@
+.search-results {
+
+  .sub-header { 
+    background-image: url(../img/header-img-3.jpg);
+  }
+
+  .siteSearch {
+    zoom: 1;
+
+    &:after { .clear; }
+
+    .content_inputHolder {
+      background: #f6f6f6;
+      width: 56%;
+      min-width: 725px;
+      margin: 40px auto 0;
+      padding: 30px 7%;
+      zoom: 1;
+
+      &:after { .clear; }
+    }
+
+    #cse {
+      background: @white;
+      width: 56%;
+      min-width: 725px;
+      margin: 0 auto;
+      padding: 30px 7%;
+    }
+
+    input {
+      width: 75%;
+      height: 36px;
+      vertical-align: top;
+      margin: 2px 0 0;
+      padding-left: 3%;
+      font-size: 1em;
+      float: left;
+    }
+
+    button {
+      float: right;
+      clear: none;
+    }
+
+    p {
+      font-size: 0.8125em;
+      color: #858585;
+      padding-top: 5px;
+      clear: both;
+    }
+  }
+
+  .main-content {
+    margin: 0 auto 80px;
+    padding: 0;
+    
+    .search-results {
+
+      .gsc-result {
+        background: #f6f6f6;
+        padding: 20px;
+        zoom: 1;
+        margin-bottom: 20px;
+        border: none 0 !important;
+
+        &:after { .clear; }
+        
+        .img {
+          width: 15%;
+          float: left;
+          margin-right: 2.5%;
+
+          img {}
+        }
+
+        h3,
+        .gs-title {
+          color: @fontColor;
+          font-size: 1.5em;
+
+          span {
+            font-family: 'proxima_novasemibold', arial, sans-serif;
+            font-size: 16px;
+            color: #8f8f8f;
+            float: right;
+          }
+
+          .gs-snippet { font-size: 1em; }
+        }
+
+        a {
+          vertical-align: top;
+          display: block;
+
+          i { margin-right: 1%; }
+        }
+
+        .downloadables {
+          border-top: 1px solid #d4d4d4;
+          padding-top: 15px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+/************************************************************************************************
+ *
+ *  @Section: Mobile Specific Styles and Media Queries
+ *
+ *************************************************************************************************/
+@media only screen and (max-device-width : 767px), only screen and (max-width: 480px) {
+
+  .search-results {
+    .sub-header { background-image: url(../img/_mobile/headers/Search_Result_Mobile.jpg); }
+    .mobile-main;
+
+    .main-content {
+      .search-results {
+        .gsc-result {
+          h3 {
+            span {
+              position: relative;
+              top: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .siteSearch {
+      .content_inputHolder {
+        width: 81%;
+        min-width: 200px;
+
+        input {
+          width: 95%;
+          margin-bottom: 10px;
+        }
+        button {
+          float: none;
+        }
+      }
+    }
+
+    #cse  {
+      padding: 30px 0;
+      min-width: inherit;
+      width: 81%;
+
+      .gsc-control-cse div { width: 98.7%; }
+    }
+
+    .gsc-control-cse div { width: 98.7%; }
+  }
+}
