@@ -96,36 +96,38 @@ $(document).on('ready', function() {
   });
 })(jQuery);
 
-$(document).ready(function() {
 
-
-
-});
 
 $(function() {
 
-    $("#scrolling-banner").smoothDivScroll({ 
-      autoScrollingMode: "always", 
-      autoScrollingDirection: "endlessLoopRight", 
-      autoScrollingStep: 1, 
-      autoScrollingInterval: 25 
-    });
-    $("#scrolling-banner").bind("mouseover", function() {
-      $(this).smoothDivScroll("stopAutoScrolling");
-    }).bind("mouseout", function() {
-      $(this).smoothDivScroll("startAutoScrolling");
-    });
 
-  // super countedown counter
+  // this is the new piece required for the superbowl scoreboard
+  $("#scrolling-banner").smoothDivScroll({ 
+    autoScrollingMode: "always", 
+    autoScrollingDirection: "endlessLoopRight", 
+    autoScrollingStep: 1, 
+    autoScrollingInterval: 25 
+  });
+  
+  $("#scrolling-banner").bind("mouseover", function() {
+    $(this).smoothDivScroll("stopAutoScrolling");
+  }).bind("mouseout", function() {
+    $(this).smoothDivScroll("startAutoScrolling");
+  });
+
+
+  // superbowl countedown counter
   var end = new Date(2014, 1, 2, 16, 30, 0, 0);
 
   $('.countdown').countdown({
     until: $.countdown.UTCDate(-7, end),
     layout: '<div class="days"><span>{d10}</span><span>{d1}</span></div> ' +
-                 '<div class="hours"><span>{h10}</span><span>{h1}</span></div> ' +
-                 '<div class="minutes"><span>{m10}</span><span>{m1}</span></div> ' +
-                 '<div class="seconds"><span>{s10}</span><span>{s1}</span></div>'
+            '<div class="hours"><span>{h10}</span><span>{h1}</span></div> ' +
+            '<div class="minutes"><span>{m10}</span><span>{m1}</span></div> ' +
+            '<div class="seconds"><span>{s10}</span><span>{s1}</span></div>'
   });
+  // end superbowl scoreboard updates
+
 
   // fix for overflow on fixed header and footer, creating horizontal scroll 
   var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
