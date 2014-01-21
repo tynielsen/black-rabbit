@@ -35917,8 +35917,11 @@ form.form-1 .main-content form .bottom-row {
     border-bottom: 3px solid transparent;
     margin-top: -1px;
   }
+  .superbowl-piece .superbowl-row-4 .content .sec-2 a:hover {
+    color: #ffffff;
+  }
   .superbowl-piece .superbowl-row-4 .content .sec-2 a:hover i {
-    border-left: 3px solid #000000;
+    border-left: 3px solid #ffffff;
   }
 }
 /************************************************************************************************
