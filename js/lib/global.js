@@ -38,15 +38,15 @@ $(function() {
       scrollTop: el_offset.top - 245 + 'px'
     }, animation_speed * 1000);
 
-    $('.nav-link a').removeClass('current');
-    $(this).addClass('current');
+    // $('.nav-link a').removeClass('current');
+    // $(this).addClass('current');
   });
 
   $(window).on('scroll', function() {
     var work_pos     = $('#work').offset().top
         , about_pos   = $('#about').offset().top
         , contact_pos = $('#contact').offset().top
-        , w_pos          = $(window).scrollTop() + 245
+        , w_pos          = $(window).scrollTop() + 450
         ;
 
     if(w_pos >= contact_pos) {

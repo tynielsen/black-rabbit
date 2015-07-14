@@ -372,7 +372,7 @@ header .logo {
 }
 .wrapper .sidebar.fixed {
   position: fixed;
-  top: 0;
+  top: 185px;
   left: ;
 }
 .wrapper .main-content {
@@ -422,15 +422,12 @@ header .logo {
 .wrapper .main-content section#contact {
   margin-bottom: 160px;
 }
-.wrapper .main-content section#contact .section-material .contact-info {
-  -webkit-column-count: 2;
-  /* Chrome, Safari, Opera */
-  -moz-column-count: 2;
-  /* Firefox */
-  column-count: 2;
-}
 .wrapper .main-content section#contact .section-material .contact-info li {
-  display: block;
+  display: inline-block;
+  margin-left: 80px;
+}
+.wrapper .main-content section#contact .section-material .contact-info li:first-child {
+  margin-left: 0;
 }
 .wrapper .main-content section#contact .section-material .contact-info li h3 {
   margin-bottom: 15px;
@@ -438,6 +435,47 @@ header .logo {
 .wrapper .main-content section#contact .section-material .contact-info li p a {
   display: block;
   margin-bottom: 30px;
+}
+.wrapper .main-content section#contact .section-material .social-links {
+  text-align: left;
+}
+.wrapper .main-content section#contact .section-material .social-links li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.wrapper .main-content section#contact .section-material .social-links li:first-child {
+  margin-left: 0;
+}
+.wrapper .main-content section#contact .section-material .social-links li a {
+  background-image: url(../img/social-icons.png);
+  background-repeat: no-repeat;
+  background-size: auto 72px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+}
+.wrapper .main-content section#contact .section-material .social-links li.link-facebook a {
+  background-position: 0 0;
+}
+.wrapper .main-content section#contact .section-material .social-links li.link-facebook a:hover {
+  background-position: 0 -40px;
+}
+.wrapper .main-content section#contact .section-material .social-links li.link-twitter a {
+  background-position: -48px 0;
+}
+.wrapper .main-content section#contact .section-material .social-links li.link-twitter a:hover {
+  background-position: -48px -40px;
+}
+.wrapper .main-content section#contact .section-material .social-links li.link-linkedin a {
+  background-position: -93px 0;
+}
+.wrapper .main-content section#contact .section-material .social-links li.link-linkedin a:hover {
+  background-position: -93px -40px;
+}
+.wrapper .main-content section#contact .section-material .copyright {
+  text-align: right;
+  font-size: 0.8rem;
 }
 /**************************************************************************************************
  *
