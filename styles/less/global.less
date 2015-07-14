@@ -1,0 +1,333 @@
+/**********************************************************************************************************************
+ *  Rain CSS Coding Standards outlined at http://standards.mediarain.com/html-css
+ *
+ *      @Section: Applies to all page sections
+ *      **Search for @ symbol or @Section: to search by category
+ *
+ *      Color Reference:
+ *      - White: #FFFFFF - @white
+ *      - Black: #000000 - @black
+ *      - Gray: #333333 - @gray
+ *
+ *      Font-Family Reference:
+ *      - Helvetica
+ *      - Arial
+ *      - Sans-Serif
+ *
+ *
+***********************************************************************************************************************/
+/**************************************************************************************************
+ *
+ *  @Section: Global Styles
+ *
+***************************************************************************************************/
+html { font-size: 62.5%; }
+
+body {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 0;
+  background-size: 110% auto;
+  background-color: @black;
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  color: @blue;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: @light-blue;
+
+  &:hover {
+    text-decoration: none;
+    color: @blue;
+  }
+
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wrapper {
+  // width: @default-width;
+  width: 1145px;
+  min-width: @default-min-width;
+  margin: 0 auto;
+  position: relative;
+  min-height: 75vh;
+}
+
+
+// Browser Upgrade Message
+.browserupgrade {
+  background: @dark-gray;
+  color: @black;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+
+// Standard Test Styles
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4,
+h5 {
+  font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+
+// Default Text style for Blogs, etc.
+.default-text {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 { margin-bottom: 20px; }
+
+  p,
+  ul,
+  ol { margin-bottom: 10px; }
+
+  ul,
+  ol { margin-left: 20px; }
+
+  ul { list-style: disc; }
+  ol { list-style: decimal; }
+}
+
+
+/**************************************************************************************************
+ *
+ *  @Section: Header & Nav Styles
+ *
+***************************************************************************************************/
+header {
+  min-height: 25vh;
+
+  .logo {
+    width: 358px;
+    height: 185px;
+    display: block;
+    margin: auto;
+    padding-right: 170px;
+  }
+}
+
+.nav {
+  margin-top: 50px;
+
+  li {
+    width: 151px;
+    height: 40px;
+    display: block;
+    margin-bottom: 18px;
+    -webkit-transform: rotate(24deg);
+    -moz-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+
+    a {
+      width: 151px;
+      height: 40px;
+      display: block;
+      text-indent: -9999px;
+      margin-left: 0;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      transition: all 1s ease;
+
+      &.current { margin-left: 23px; }
+      &:hover { cursor: pointer; }
+    }
+
+    &.nav-1 {
+
+      a {
+        background-image: url(../img/nav-1.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+    }
+    
+    &.nav-2 {
+
+      a {
+        background-image: url(../img/nav-2.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+    }
+    
+    &.nav-3 {
+
+      a {
+        background-image: url(../img/nav-3.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+    }
+  }
+}
+
+
+/**************************************************************************************************
+ *
+ *  @Section: Homepage Content Styles
+ *
+***************************************************************************************************/
+.wrapper {
+  width: 1145px;
+
+  &:after { .clear; }
+
+  .sidebar,
+  .main-content {
+    background-repeat: no-repeat;
+    min-height: 75vh;
+  }
+
+  .sidebar {
+    // width: 15%;
+    width: 175px;
+    float: left;
+    background-image: url(../img/bg-sidebar.png);
+    background-position: right top;
+
+    &.fixed {
+      position: fixed;
+      top: 0;
+      left: ;
+    }
+  }
+
+  .main-content {
+    width: 970px;
+    float: right;
+    padding-top: 60px;
+    background-image: url(../img/bg-main-content.png);
+    background-position: right top;
+    background-position: right 185px;
+    background-attachment: fixed;
+
+    section {
+      margin: 0 200px 200px 80px;
+
+      .section-heading {
+        background: url(../img/bg-repeatable.png) repeat 0 0;
+        display: inline-block;
+        margin-bottom: 30px;
+        padding: 10px 35px 7px;
+        vertical-align: middle;
+
+        h1 {}
+      }
+
+      .section-material {
+        background: url(../img/bg-repeatable.png) repeat 0 0;
+        padding: 45px 60px;
+        margin-bottom: 30px;
+
+        h3 {
+          margin-bottom: 40px;
+        }
+
+        .projects-list {
+          -webkit-column-count: 2; /* Chrome, Safari, Opera */
+          -moz-column-count: 2; /* Firefox */
+          column-count: 2;
+
+          li {
+            display: block;
+            margin-bottom: 10px;
+
+            a {
+
+              &:focus {
+                color: gray;
+
+                &:hover { color: inherit; }
+              }
+            }
+          }
+        }
+      }
+
+      &#about {}
+      &#work {}
+      
+      &#contact {
+        margin-bottom: 160px;
+
+        .section-material {
+
+          .contact-info {
+            -webkit-column-count: 2; /* Chrome, Safari, Opera */
+            -moz-column-count: 2; /* Firefox */
+            column-count: 2;
+
+            li {
+              display: block;
+
+              h3 { margin-bottom: 15px; }
+
+              p {
+
+                a {
+                  display: block;
+                  margin-bottom: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/**************************************************************************************************
+ *
+ *  @Section: Mobile Styles
+ *
+***************************************************************************************************/
+@media only screen and (max-width: @breakpoint) {
+
+}
+
+
+
+
