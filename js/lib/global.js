@@ -46,7 +46,7 @@ $(function() {
     var work_pos     = $('#work').offset().top
         , about_pos   = $('#about').offset().top
         , contact_pos = $('#contact').offset().top
-        , w_pos          = $(window).scrollTop() + 450
+        , w_pos          = $(window).scrollTop() + 400
         ;
 
     if(w_pos >= contact_pos) {
