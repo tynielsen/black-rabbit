@@ -228,7 +228,7 @@ header {
 
     &.fixed {
       position: fixed;
-      top: 0;
+      top: 185px;
       left: ;
     }
   }
@@ -294,12 +294,12 @@ header {
         .section-material {
 
           .contact-info {
-            -webkit-column-count: 2; /* Chrome, Safari, Opera */
-            -moz-column-count: 2; /* Firefox */
-            column-count: 2;
 
             li {
-              display: block;
+              display: inline-block;
+              margin-left: 80px;
+
+              &:first-child { margin-left: 0; }
 
               h3 { margin-bottom: 15px; }
 
@@ -311,6 +311,49 @@ header {
                 }
               }
             }
+          }
+
+          .social-links {
+            text-align: left;
+
+            li {
+              display: inline-block;
+              margin-left: 15px;
+
+              &:first-child { margin-left: 0; }
+
+              a {
+                background-image: url(../img/social-icons.png);
+                background-repeat: no-repeat;
+                background-size: auto 72px;
+                display: block;
+                width: 32px;
+                height: 32px;
+                text-indent: -9999px;
+              }
+
+              &.link-facebook a {
+                background-position: 0 0;
+
+                &:hover { background-position: 0 -40px; }
+              }
+              &.link-twitter a {
+                background-position: -48px 0;
+
+                &:hover { background-position: -48px -40px; }
+              }
+              &.link-linkedin a {
+                background-position: -93px 0;
+
+                &:hover { background-position: -93px -40px; }
+              }
+            }
+          }
+
+          .copyright {
+            text-align: right;
+            // margin-top: 40px;
+            font-size: 0.8rem;
           }
         }
       }
